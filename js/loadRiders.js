@@ -10,6 +10,7 @@ async function loadRiders(){
                     "<td>" + riders[i].mtnPoints + "</td>" +
                     "<td>" + riders[i].sprintPoints + "</td>" +
                     "<td>" + riders[i].totalTime + "</td>" +
+                    "<td>" + riders[i].nationality + "</td>" +
                     "<td><button class='btn btn-danger' id='delete-btn'>Delete</button></td>" +
                 "</tr>"
       table.innerHTML += row;
@@ -19,17 +20,4 @@ async function loadRiders(){
 }
 
 
-
-
-
-/*
-async function loadRiders(){
-  const response = await fetch(url);
-  const riders = await response.json();
-
-  console.log(riders)
-}
-
-loadRiders();
-*/
 
